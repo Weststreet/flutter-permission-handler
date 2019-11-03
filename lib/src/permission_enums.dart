@@ -86,24 +86,24 @@ class PermissionGroup {
 
   /// Android: Camera
   /// iOS: Photos (Camera Roll and Camera)
-  static const PermissionGroup camera = PermissionGroup._(1);
+  static const PermissionGroup camera = PermissionGroup._(0);
 
   /// Android: Microphone
   /// iOS: Microphone
-  static const PermissionGroup microphone = PermissionGroup._(7);
+  static const PermissionGroup microphone = PermissionGroup._(1);
 
 
   /// Android: Nothing
   /// iOS: Photos
-  static const PermissionGroup photos = PermissionGroup._(9);
+  static const PermissionGroup photos = PermissionGroup._(2);
 
 
   /// Android: Ignore Battery Optimizations
   static const PermissionGroup ignoreBatteryOptimizations =
-      PermissionGroup._(15);
+      PermissionGroup._(3);
 
   /// The unknown permission only used for return type, never requested
-  static const PermissionGroup unknown = PermissionGroup._(16);
+  static const PermissionGroup unknown = PermissionGroup._(4);
 
   static const List<PermissionGroup> values = <PermissionGroup>[
     camera,
